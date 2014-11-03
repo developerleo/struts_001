@@ -20,9 +20,9 @@ public class LoginAction extends ActionSupport{
     	System.out.print("execute in LoginAction is called");
         //注意这里使用get来取得属性值   
     	if(user.getUsername().equals("aaa")&&user.getPassword().equals("aaa")) {  
-                return SUCCESS;  
+                return true;  
             }else {  
-                return ERROR;  
+                return false;  
         }  
     } 
 }
