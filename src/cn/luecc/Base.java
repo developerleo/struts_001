@@ -29,7 +29,7 @@ public class Base {
 		s.save(user);
 		ts.commit();
 		s.close();
-		System.out.println("hibernate test over");
+		System.out.println("hibernate test done");
 		
 	}
 

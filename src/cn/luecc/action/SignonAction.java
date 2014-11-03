@@ -35,7 +35,6 @@ public class SignonAction extends ActionSupport{
     	}
 
 		return SUCCESS;
-        //注意这里使用get来取得属性值   
     	
 /*    	if(user.getUsername().equals("sss")&&
     			user.getPassword().equals("sss")&&
