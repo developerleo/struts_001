@@ -11,19 +11,16 @@ public class UserService {
 		Session session = null;  
         Transaction trans = null;
         
-        try  
-        {  
+        try  {  
             session = HibernateUtil.getSession();  
             trans = session.beginTransaction();  
             session.save(user);  
             trans.commit();  
-        } catch (RuntimeException e)  
-        {  
+        } catch (RuntimeException e)  {  
             //trans.rollback();  
             e.printStackTrace();  
             throw e;  
-        } finally  
-        {  
+        } finally  {  
             session.close();  
         }
 	}
